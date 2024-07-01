@@ -1,23 +1,24 @@
 {
-    "name": "jasny/sso",
-    "description": "Simple Single Sign-On",
+    "name": "kominfo-denpasar/sso",
+    "description": "SSO Broker",
     "keywords": ["sso", "auth"],
     "license": "MIT",
-    "homepage": "https://github.com/jasny/sso/wiki",
+    "homepage": "https://sso.denpasarkota.go.id",
     "authors": [
         {
-            "name": "Arnold Daniels",
-            "email": "arnold@jasny.net",
-            "homepage": "http://www.jasny.net"
+            "name": "Kominfos Denpasar",
+            "email": "support@denpasarkota.go.id",
+            "homepage": "https://kominfostatistik.denpasarkota.go.id"
         }
     ],
     "support": {
-        "issues": "https://github.com/jasny/sso/issues",
-        "source": "https://github.com/jasny/sso"
+        "issues": "https://github.com/kominfo-denpasar/sso-broker/issues",
+        "source": "https://github.com/kominfo-denpasar/sso-broker"
     },
     "require": {
         "php": "^8.0",
         "ext-json": "*",
+        "jasny/sso": "^0.5",
         "jasny/immutable": "^2.1",
         "psr/simple-cache": "*",
         "psr/log": "*"
@@ -35,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jasny\\SSO\\": "src/"
+            "Kominfos\\SSO\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jasny\\Tests\\SSO\\": "tests/unit/"
+            "Kominfos\\Tests\\SSO\\": "tests/unit/"
         }
     },
     "scripts": {
